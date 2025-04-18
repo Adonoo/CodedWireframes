@@ -1,0 +1,872 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+ul {
+    padding: 0;
+}
+
+h3 {
+    text-align: center;
+}
+
+/* Header Styling */
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: white;
+    position: relative;
+}
+
+header .burgermenuicon {
+    height: 3v;
+    width: 3vw;
+    display: block;
+    position: absolute;
+    top: 2vw;
+    left: 1.5vw;
+    transition: transform .2s;
+}
+
+header .burgermenuicon:hover {
+    transform: scale(1.3) ;
+}
+
+header .userlogo {
+    height: 3vw;
+    width: 3vw;
+    display: block;
+    position: absolute;
+    top: 2vw;
+    right: 1.5vw;
+    transition: transform .2s;
+}
+
+header .userlogo:hover {
+    transform: scale(1.3);
+}
+
+header nav ul {
+    list-style-type: none;
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+}
+
+.headerbox {
+    text-decoration: none;
+    color: grey;
+    font-weight: bold;
+    padding: 15px;
+    border: 2px solid grey;
+    border-radius: 25px;
+    display: block;
+    margin: 2vw 2vw;
+    transition: transform .2s;
+}
+
+.headerbox:hover {
+    background-color: darkgrey;
+    color: white;
+    transform: scale(1.2);
+}
+
+header a img {
+    height: 7vw;
+    width: 10vw;
+    transition: transform .2s;
+}
+
+header a img:hover {
+    transform: scale(1.2);
+}
+
+/* Ende Header Styling */
+
+/* Burgermenü & Buttons Styling */
+
+.burgermenu {
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    left: 5vw;
+    top: 3.5vh;
+    list-style-type: none;
+    gap: 2vh;
+    border: 1px solid black;
+    background-color: white;
+    padding: 3vh 1vw;
+    border-radius: 25px;
+    border-top-left-radius: 0;
+    z-index: 1;
+}
+
+.burgermenubutton {
+    display: block;
+    color: black;
+    text-decoration: none;
+    padding: 1vh 1vw;
+    border: 1px solid lightgray;
+    border-radius: 25px;
+    width: 10vw;
+    background-color: white;
+    text-align: center;
+    transition: transform .2s;
+    overflow: hidden;
+}
+
+.burgermenubutton:hover {
+    background-color: darkgrey;
+    color: white;
+    transform: scale(1.1);
+}
+
+/* Ende Burgermenü & Buttons Styling */
+
+button {
+    background: none;
+    border: none;
+    transition: transform .2s;
+}
+
+.large {
+    font-size: large;
+}
+
+.active {
+    background-color: darkgrey;
+    color: white;
+}
+
+.subtext {
+    text-align: center;
+    font-size: small;
+}
+
+.content h2 {
+    text-align: center;
+    margin: 8vw 0 2vw 0;
+}
+
+.content h1 {
+    text-align: center;
+    margin-top: 4vh;
+}
+
+.content video {
+    display: block;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+/* Startseite Styling */
+
+.steps {
+    margin: 5vw 0 8vw 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+}
+
+.steps li {
+    display: flex;
+    flex-direction: column;
+}
+
+.steps img {
+    border-radius: 25px;
+}
+
+.button {
+    display: block;
+    width: 40vw;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+    color: grey;
+    margin: 0 auto;
+    padding: 25px;
+    border: 1px solid grey;
+    border-radius: 25px;
+    transition: transform .2s;
+}
+
+.buttonfaq {
+    display: block;
+    width: 30vw;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+    color: grey;
+    margin: 0 auto;
+    padding: 20px;
+    border: 1px solid grey;
+    border-radius: 25px;
+    transition: transform .2s;
+}
+
+.whatsdolu {
+    position: relative;
+    text-align: center;
+}
+
+.whatsdolu img {
+    width: 99vw;
+}
+
+
+.whatsdolutext {
+    position: absolute;
+    top: 40%;
+    left: 25%;
+}
+
+/* Ende Startseite Styling */
+
+/* Hover für alle fast Buttons */
+
+.button:hover, .buttonfaq:hover, .confirmbutton:hover, .weiterlesenbutton:hover, .blogweiterlesenbutton:hover, .mainblogweiterlesenbutton:hover, 
+.registerbutton:hover, .loginbutton:hover, .smallregisterbutton:hover, .formregisterbutton:hover, .profilepicturechangebutton:hover{
+    background-color: darkgrey;
+    color: white;
+    transform: scale(1.2);
+}
+
+/* Anmeldeseite Styling */
+
+.essensbild {
+    display: block;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+.rezept_todo {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    text-align: center;
+    gap: 10vw;
+    margin-top: 5vw;
+}
+
+.rezept_todo li {
+    background-color: azure;
+}
+
+.liste {
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto auto;
+    justify-content: center;
+    gap: 2vw;
+    padding: 0vw;
+    list-style-position: inside;
+}
+
+.liste li {
+    padding: 0;
+}
+
+.rezept_todo li {
+    background-color: #ffffee;
+    padding: 2vw;
+}
+
+.liste img {
+    width: 40px;
+    height: 101px;
+}
+
+.sitznummer, .bestätigung {
+    display: none;
+    text-align: center;
+    margin: 5vw auto;
+}
+
+.confirmbutton {
+    display: block;
+    width: 20vw;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+    color: grey;
+    margin: 2vw auto;
+    padding: 25px;
+    border: 1px solid grey;
+    border-radius: 25px;
+    transition: transform .2s;
+}
+
+.vorschlag {
+    text-align: center;
+    display: block;
+    margin: 5vw auto;
+}
+
+.vorschlag input {
+    padding: 1vw;
+    border: none;
+    border-radius: 25px;
+    background-color: lightgrey;
+}
+
+/* Ende Anmeldeseite Styling */
+
+/* Blogseite Styling */
+
+.mainblogimages {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    margin: 5vw 0;
+}
+
+.mainblogimages img {
+    border-radius: 25px;
+}
+
+.mainblogtext {
+    text-align: center;
+}
+
+.mainblogtext h2 {
+    margin: 0;
+}
+
+.mainblogweiterlesenbutton {
+    display: block;
+    width: 20vw;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+    color: grey;
+    margin: 2vw auto;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 25px;
+    transition: transform .2s;
+}
+
+.bloglist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+    gap: 5vw;
+    margin-top: 5vw;
+}
+
+.blogimage {
+    display: block;
+    margin: 0 auto;
+    border-radius: 25px;
+}
+
+.blogtext {
+    text-align: left;
+    margin-bottom: 2vw;
+}
+
+.blogweiterlesenbutton {
+    width: 10vw;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+    color: grey;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 25px;
+    transition: transform .2s;
+}
+
+.blogpost {
+    display:block;
+    margin: 5vw auto;
+    padding: 2vw;
+    width: 60vw;
+    background-color: #ffffee;
+}
+
+.blogposttext {
+    margin: 2vw;
+    text-align: left;
+}
+
+.blogposttext h2 {
+    text-align: left;
+}
+
+/* Ende Blogseite Styling */
+
+/* Registrierungs- & Anmeldungsseite Styling */
+
+.registerbutton {
+    display: block;
+    width: 40vw;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+    color: grey;
+    margin: 0 auto;
+    padding: 25px;
+    margin-bottom: 15vw;
+    border: 1px solid grey;
+    border-radius: 25px;
+    transition: transform .2s;
+}
+
+.loginform {
+    display: flex;
+    flex-direction: column;
+    align-self: center;
+    width: 20vw;
+    text-align: left;
+    margin: 3vw auto;
+    color: grey;
+    font-size: small;
+}
+
+
+.loginform input {
+    padding: 1vw;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.loginbutton {
+    display: block;
+    width: 10vw;
+    margin: 0 auto 5vw auto;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+    color: grey;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 25px;
+    transition: transform .2s;
+}
+
+.smallregisterbutton {
+    display: block;
+    width: 10vw;
+    margin: 0 auto 5vw auto;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+    color: grey;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 25px;
+    transition: transform .2s;
+}
+
+.registerformtop {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: auto auto auto;
+    column-gap: 6vw;
+    row-gap: 2.5vw;
+    font-size: small;
+}
+
+.registerformtop > .profilepicture {
+    grid-row: 1 / 4;
+}
+
+.registerformtop input[type="text"] {
+    padding: 1vw;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+}
+
+.registerformtop label {
+    text-align: left;
+    color: grey;
+}
+
+.registerformbottom {
+    margin: 3vw auto;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: 10vw 12vw 10vw 10vw;
+    column-gap: 6vw;
+    row-gap: 2.5vw;
+    font-size: small;
+}
+
+.registerformbottom > .dropdown {
+    grid-row: 1 / 4;
+}
+
+.registerformbottom input[type="text"] {
+    padding: 1vw;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+}
+
+.registerformbottom input[type="checkbox"] {
+    width: 1vw;
+    height: 1vw;
+}
+
+.registerformbottom select {
+    padding: 1vw;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+    width: 100%;
+}
+
+.registerformbottom label {
+    text-align: left;
+    color: grey;
+}
+
+.registerformbottom > .selfinput {
+    grid-column: 2 / 5;
+}
+
+.registerformbottom > .selfinput > input {
+    width: 85%;
+    height: 66%;
+}
+
+.formregisterbutton {
+    display: block;
+    width: 10vw;
+    margin: 6vw 25vw 5vw auto;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+    color: grey;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 25px;
+    transition: transform .2s;
+}
+
+/* Ende Registrierungs- & Anmeldungsseite Styling */
+
+/* Accountübersicht Styling */
+
+.profilepicturechangebutton {
+    display: block;
+    width: 5vw;
+    margin: 1vw auto;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+    color: grey;
+    padding: 15px;
+    border: 1px solid grey;
+    border-radius: 25px;
+    font-size: small;
+    transition: transform .2s;
+}
+
+.accountoverview {
+    display: flex;
+    flex-direction: row;
+    gap: 5vw;
+    justify-content: center;
+}
+
+.accountoverview p {
+    margin: 1vw;
+}
+
+.accountoverview input {
+    width: 10vw;
+    height: 4vh;
+    padding: 1vw;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+}
+
+.accountoverview  p  img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.deleteaccountbutton {
+    display: block;
+    width: 10vw;
+    margin: 1vw auto;
+    text-decoration: none;
+    text-align: center;
+    font-size: large;
+    color: red;
+    padding: 15px;
+    border: 1px solid red;
+    border-radius: 25px;
+    font-size: small;
+    transition: transform .2s;
+}
+
+.deleteaccountbutton:hover {
+    background-color: lightcoral;
+    transform: scale(1.2)
+}
+
+/* Ende Accountübersicht */
+
+/* FAQ Styling */
+
+.FAQheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 1vw;
+    margin: 5vw 0;
+}
+
+.FAQheader h2 {
+    margin: 0;
+    padding: 0;
+}
+
+.FAQheader input {
+    margin-left: 3vw;
+    padding: 1vw;
+    border: 1px solid lightgrey;
+    border-radius: 15px;
+}
+
+.FAQlist {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    list-style-type: none;
+}
+
+.FAQlist li {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    width: 90%;
+    margin: 2vw 0;
+}
+
+.FAQlist .FAQquestion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.FAQlist hr {
+    width: 90%;
+    margin: 1vw 0;
+    border: 1px solid black;
+    border-radius: 5px;
+}
+
+.FAQlist .arrow {
+    font-size: 2rem;
+    margin:  0.5vw 3vw;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.FAQlist .arrow.rotate {
+    transform: rotate(180deg);
+}
+
+.FAQanswer {
+    display: none;
+    text-align: center;
+    margin: 4vh auto;
+    padding-right: 6vw;
+}
+
+.FAQanswer p {
+    margin: 0 auto;
+    text-align: center;
+}
+
+.FAQlist .helpful {
+    display: none;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 30%;
+    padding-right: 6vw;
+    margin: 0 auto;
+}
+
+/* Ende FAQ Styling */
+
+/* Chats Styling */
+
+.chatscontainer {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.chatoverview {
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    list-style-type: none;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    width: 30%;
+    height: 80vh;
+}
+
+.chatoverview hr {
+    margin: 0;
+}
+
+.chatsheader {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    text-align: left;
+    padding: 1vw;
+}
+
+.chatsheader h3 {
+    margin: 0 18vw 0 2vw;
+}
+
+.chatsheader i {
+    margin: 0 1vw;
+}
+
+.chatselect {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    gap: 1vw;
+    padding: 2vh 0;
+}
+
+.chatselect img {
+    margin-left: 2vw;
+}
+
+.chatbox {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+    width: 70%;
+    height: 80vh;
+}
+
+.messages {
+    display: flex;
+    flex-direction: column;
+    gap: 2vh;
+    padding: 10vh 2vw;
+    overflow: auto;
+}
+
+.currentday {
+    background-color: rgba(234, 234, 234, 0.73);
+    width: 10%;
+    margin: 0 auto;
+    border-radius: 25px;
+    text-align: center;
+}
+
+.chatmessage {
+    padding: 2vh 2vh;
+    border: 1px solid lightgrey;
+    border-radius: 25px;
+}
+
+.messageleft {
+    margin: 0 auto 2vh 0;
+    text-align: left;
+    border-bottom-left-radius: 0;
+}
+
+.messageright {
+    margin: 0 0 2vh auto;
+    text-align: right;
+    border-bottom-right-radius: 0;
+}
+
+.chatmessageinput {
+    border: 1px solid lightgray;
+    border-radius: 25px;
+}
+
+.chatmessageinput input {
+    padding: 1vw;
+    border: none;
+    border-radius: 25px;
+    margin: 2vh 0 2vh 2vw;
+    background-color: lightgrey;
+    width: 80%;
+}
+
+/* Ende Chats Styling */
+
+/* Footer Styling */
+
+
+footer {
+    background: #333333;
+    color: white;
+    text-align: center;
+    font-size: 0.8vw;
+    padding: 20px;
+    margin-top: 80px;
+}
+
+.footericons {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    gap: 2vw;
+}
+
+.footericons i {
+    font-size: 2rem;
+    transition: transform .2s;
+}
+
+.footericons i:hover {
+    transform: scale(1.2);
+}
+
+.footerlinks {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    list-style-type: none;
+    gap: 0.5vw;
+}
+
+.footerlinks a {
+    text-decoration: none;
+    color: white;
+}
+
+.footerlinks a:hover {
+    text-decoration: underline;
+    color: white;
+}
+
+/* Ende Footer Styling */
