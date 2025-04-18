@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://kit.fontawesome.com/09935c4b7f.js"> crossorigin="anonymous"</script> <!-- Icon Library importieren -->
+    <script src="scripts/functions.js"> </script>
+    <title>Das DoLu</title>
+</head>
+<body>
+    <header>
+        <button onclick="displayBurgermenu()"> <img class="burgermenuicon" src="img/Burgermenu.png" alt="Burgermenü Icon"> </button>
+        <a href="Register_Login.html"><img class="userlogo" src="img/Userlogo.png" alt="Userlogo"></a>
+        <nav>
+            <ul>
+                <li><a href="DoLu.html" class="headerbox">Das DoLu</a></li>
+                <li><a href="index.html"><img src="img/LogoPlatzhalter_NotSelected.png" alt="Logo"></a></li>
+                <li><a href="Blog.html" class="headerbox">DoLu History</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <ul class="burgermenu" id="burgermenu">
+        <li>
+            <a href="index.html"  class="burgermenubutton"> Startseite </a>
+        </li>
+        <li>
+            <a href="DoLu.html"  class="burgermenubutton"> DoLu </a>
+        </li>
+        <li>
+            <a href="Chats.html"  class="burgermenubutton"> Chats </a>
+        </li>
+        <li>
+            <a href="Blog.html"  class="burgermenubutton"> DoLu History </a>
+        </li>
+        <li>
+            <a href="FAQ.html"  class="burgermenubutton"> FAQ </a>
+        </li>
+        <li>
+            <a href="Login.html"  class="burgermenubutton"> Log In </a>
+        </li>
+    </ul>
+    
+    <div class="content">
+
+        <h2> Account erstellen </h2>
+
+        <form class="registerformtop">
+            <div class="profilepicture">
+                <input type="image" src="img/UploadImage.png" alt="Profilbild eifügen" required>
+            </div>
+            <div>
+                <label for="firstname">Vorname: </label> <br>
+                <input type="text" name="vorname" placeholder="Vorname" required> <br>
+            </div>
+            <div>
+                <label for="username">Nutzername: </label> <br>
+                <input type="text" name="username" placeholder="Nutzername" required> <br>
+            </div>
+            <div>
+                <label for="surname">Nachname: </label> <br>
+                <input type="text" name="surname" placeholder="Nachname" required> <br>
+            </div>
+            <div>
+                <label for="password">Passwort: </label> <br>
+                <input type="text" name="password" placeholder="Passwort" required> <br>
+            </div>
+            <div>
+                <label for="email">E-Mail: </label> <br>
+                <input type="text" name="email" placeholder="E-Mail" required> <br>
+            </div>
+            <div>
+                <label for="repeatpassword">Passwort wiederholen: </label> <br>
+                <input type="text" name="repeatpassword" placeholder="Passwort wiederholen" required> <br>
+            </div>
+        </form>
+
+        <form class="registerformbottom">
+            <div class="dropdown">
+                <label for="food">Wie ernährst du dich?</label> <br>
+                <select id="food" name="food">
+                    <option value="withmeat">Mit Fleisch</option>
+                    <option value="vegeterian">Vegetarisch</option>
+                    <option value="vegan">Vegan</option>
+                    <option value="pesceterian">Pesketarisch</option>
+                    <option value="gluten-free">Glutenfrei</option>
+                    <option value="flexiterian">Flexitarisch</option></select>
+            </div>
+            <div>
+                <label for="lactose"> Hast du Allergien? Wenn ja, welche?</label> <br>
+                <input type="checkbox" name="lactose"> Laktose
+            </div>
+            <div>
+                <label for="gluten"></label> <br>
+                <input type="checkbox" name="gluten"> Gluten
+            </div>
+            <div>
+                <label for="nuts"></label> <br>
+                <input type="checkbox" name="nuts"> Nüsse
+            </div>
+            <div>
+                <label for="fish"></label> <br>
+                <input type="checkbox" name="fish"> Fisch & Meeresfrüchte
+            </div>
+            <div>
+                <label for="legumes"></label> <br>
+                <input type="checkbox" name="legumes"> Hülsenfrüchte
+            </div>
+            <div>
+                <label for="eggs"></label> <br>
+                <input type="checkbox" name="eggs"> Eier
+            </div>
+            <div class="selfinput">
+                <label for="selfinput">Deine nicht dabei? Trag sie gerne hier ein! </label> <br>
+                <input type="text" name="selfinput" placeholder="Hier deine Allergien eintragen">
+            </div>
+        </form>
+
+        <a href="Account.html" class="formregisterbutton"> Account erstellen! </a>
+        
+    </div>
+
+    <footer>
+
+        <h3> Social Media </h3>
+        <ul class="footericons">
+            <li><i class="fa-brands fa-instagram"></i></li>
+            <li><i class="fa-brands fa-tiktok"></i></li>
+            <li><i class="fa-brands fa-x-twitter"></i></li>
+            <li><i class="fa-solid fa-envelope"></i></li>
+        </ul>
+        <ul class="footerlinks">
+            <li><a href="Impressum.html">Impressum</a></li>
+            <li><a href="AGB.html">AGB</a></li>
+            <li><a href="Datenschutz.html">Datenschutz</a></li>
+        </ul>
+
+    </footer>
+</body>
+</html>
